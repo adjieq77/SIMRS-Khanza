@@ -99,7 +99,7 @@ public class frmUtama extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnCetakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCetakActionPerformed
-        if(Sequel.menyimpantf("antriloketcetak","current_date(),current_time(),'"+LabelNomor.getText()+"'","Nomor Antrian")==true){
+        if(Sequel.menyimpantf("antriloketcetak","current_date(),current_time(),'"+LabelNomor.getText()+"',null,null","Nomor Antrian")==true){
             this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             Map<String, Object> param = new HashMap<>();
             param.put("namars",akses.getnamars());
@@ -114,7 +114,7 @@ public class frmUtama extends javax.swing.JFrame {
             autonomer();
         }else{
             autonomer();
-            if(Sequel.menyimpantf("antriloketcetak","current_date(),current_time(),'"+LabelNomor.getText()+"'","Nomor Antrian")==true){
+            if(Sequel.menyimpantf("antriloketcetak","current_date(),current_time(),'"+LabelNomor.getText()+"',null,null","Nomor Antrian")==true){
                 this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                 Map<String, Object> param = new HashMap<>();
                 param.put("namars",akses.getnamars());
@@ -129,7 +129,7 @@ public class frmUtama extends javax.swing.JFrame {
                 autonomer();
             }else{
                 autonomer();
-                if(Sequel.menyimpantf("antriloketcetak","current_date(),current_time(),'"+LabelNomor.getText()+"'","Nomor Antrian")==true){
+                if(Sequel.menyimpantf("antriloketcetak","current_date(),current_time(),'"+LabelNomor.getText()+"',null,null","Nomor Antrian")==true){
                     this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                     Map<String, Object> param = new HashMap<>();
                     param.put("namars",akses.getnamars());
